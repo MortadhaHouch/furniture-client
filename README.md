@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🎨 Frontend
 
-## Getting Started
+The frontend is built using **Next.js** with a modern UI design, integrating **Tailwind CSS, Radix UI, and animations** for a seamless user experience.
 
-First, run the development server:
+### 🛠️ Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework:** Next.js
+- **Styling:** Tailwind CSS, Next-Themes
+- **UI Components:** Radix UI, Lucide React, Swiper
+- **State Management:** React Context API
+- **Animations & Effects:** Lenis (smooth scrolling), Lottie React, Motion
+- **Cookies Management:** React Cookie
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 📂 Frontend Pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+##### 🔐 Authentication
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `GET /login` - User login page
+- `GET /signup` - User registration page
 
-## Learn More
+##### 🛍️ Shopping Experience
 
-To learn more about Next.js, take a look at the following resources:
+- `GET /produits` - Browse all available furniture
+- `GET /tendances` - View trending furniture products
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##### 📊 Dashboard (User/Admin/Super Admin)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `GET /dashboard` - Main dashboard overview
+- `GET /dashboard/categories/:id` - Manage furniture categories
+- `GET /dashboard/commandes/:id` - View and manage orders
+- `GET /dashboard/messages` - Manage user/admin messages
+- `GET /dashboard/notifications` - Manage notifications
+- `GET /dashboard/profil` - User profile management
+- `GET /dashboard/settings` - Configure account settings
+- `GET /dashboard/utilisateurs/:id` - Manage users (Admin only)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Setup & Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🏗️ Backend Setup
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/furniture-ecommerce.git
+   cd furniture-ecommerce/backend
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Configure environment variables in `.env`:
+   ```env
+   SECRET_KEY=your_secret_key
+   MONGO_URI=your_mongodb_uri
+   PORT=5000
+   ```
+4. Start the server:
+   ```sh
+   npm start
+   ```
+
+### 🌐 Frontend Setup
+
+1. Navigate to the frontend folder:
+   ```sh
+   cd ../frontend
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the Next.js development server:
+   ```sh
+   npm run dev
+   ```
+4. Open in browser: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📌 Features
+
+✅ User authentication with JWT cookies\
+✅ Product browsing, filtering, and searching\
+✅ Secure checkout and order processing\
+✅ Admin panel for managing products, orders, users, and categories\
+✅ Notifications and messaging system\
+✅ Smooth UI animations and modern design
+
+---
+
+## 🛠️ Future Enhancements
+
+- 📦 **Wishlist & Favorites** - Allow users to save favorite furniture
+- 🚚 **Real-time Order Tracking** - Live updates on delivery status
+- 🏷️ **Discounts & Promotions** - Implement discount coupons
+- 🔍 **Advanced Search & Filters** - Improve product discovery
+- 📊 **Sales Analytics Dashboard** - Admin insights into business trends
+
+---
+
+## 🏆 Contributors
+
+💡 Developed by **[Your Name/Team]**
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 📞 Contact
+
+For inquiries, support, or collaboration, reach out at: 📧 Email: [your.email@example.com](mailto\:your.email@example.com)\
+🌐 Website: [yourwebsite.com](https://yourwebsite.com)
+
