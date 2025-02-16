@@ -3,7 +3,6 @@
 import * as React from "react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
-import { CgScreen } from "react-icons/cg";
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -31,9 +30,6 @@ export function ModeToggle() {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
           <IoMoon /><span>Dark</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          <CgScreen /><span>System</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

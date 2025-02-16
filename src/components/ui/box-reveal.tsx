@@ -1,5 +1,6 @@
 "use client";
 
+import clsx from "clsx";
 import { motion, useAnimation, useInView } from "motion/react";
 import { useEffect, useRef } from "react";
 
@@ -8,6 +9,7 @@ interface BoxRevealProps {
   width?: "fit-content" | "100%";
   boxColor?: string;
   duration?: number;
+  className?: string;
 }
 
 export const BoxReveal = ({
@@ -15,6 +17,7 @@ export const BoxReveal = ({
   width = "fit-content",
   boxColor = "#5046e6",
   duration,
+  className
 }: BoxRevealProps) => {
   const mainControls = useAnimation();
   const slideControls = useAnimation();
@@ -42,6 +45,7 @@ export const BoxReveal = ({
         initial="hidden"
         animate={mainControls}
         transition={{ duration: duration ? duration : 0.5, delay: 0.25 }}
+        className={clsx(className)}
       >
         {children}
       </motion.div>

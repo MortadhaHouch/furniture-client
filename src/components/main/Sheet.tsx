@@ -8,16 +8,15 @@ import {
   } from "@/components/ui/sheet"
 import React from 'react'
 
-export default function Sheet() {
+export default function Sheet({children,trigger,title}:{children:React.ReactNode,trigger:React.ReactNode,title:string}) {
     return (
         <SheetComponent>
-            <SheetTrigger>Open</SheetTrigger>
+            <SheetTrigger>{trigger}</SheetTrigger>
             <SheetContent>
                 <SheetHeader>
-                <SheetTitle>Are you absolutely sure?</SheetTitle>
+                <SheetTitle>{title}</SheetTitle>
                 <SheetDescription>
-                    This action cannot be undone. This will permanently delete your account
-                    and remove your data from our servers.
+                    {children}
                 </SheetDescription>
                 </SheetHeader>
             </SheetContent>

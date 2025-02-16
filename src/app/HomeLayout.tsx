@@ -3,6 +3,8 @@ import { Footer } from '@/components/main/Footer';
 import Header from '@/components/main/Header';
 import React, { useEffect } from 'react'
 import Lenis from 'lenis'
+import { CookiesProvider } from 'react-cookie';
+import AuthContextProvider from '@/providers/AuthContext';
 export default function HomeLayout({
     children,
   }: Readonly<{
@@ -27,9 +29,13 @@ export default function HomeLayout({
     }, [])
     return (
         <>
-            <Header/>
-            {children}
-            <Footer/>
+            <CookiesProvider>
+                <AuthContextProvider>
+                    <Header/>
+                    {children}
+                    <Footer/>
+                </AuthContextProvider>
+            </CookiesProvider>
         </>
     )
 }
