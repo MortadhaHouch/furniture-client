@@ -113,6 +113,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-For inquiries, support, or collaboration, reach out at: 📧 Email: [your.email@example.com](mailto\:your.email@example.com)\
-🌐 Website: [yourwebsite.com](https://yourwebsite.com)
+For inquiries, support, or collaboration, reach out at: 📧 Email: [your.email@example.com](mailto\:mortahouch123@gmail.com)\
+🌐 Website: [yourwebsite.com](https://[yourwebsite.com](https://mortadha-houch.netlify.app/))
 
